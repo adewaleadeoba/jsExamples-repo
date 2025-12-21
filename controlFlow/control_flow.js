@@ -57,3 +57,27 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated? "Authenticated":"Not authenticated";
 
 console.log("Authentication Status: ", authenticationStatus)
+
+//Practice Task
+let role = "Employee";
+let accessType;
+let accessTypeMessage;
+
+if (role === "Employee") {
+    accessType = "access to dietary services"
+}
+else {
+    switch (role) {
+        case "Enrolled Member":
+            accessType = "access to dietary services and one-on-one with dietician";
+            break;
+        case "Subscriber":
+            accessType = "partial access to facility dietary services only";
+            break;
+        case "Non-Subscriber":
+            accessType = "no access. You need to enroll or subscribe";
+            break;
+    }   
+}
+
+console.log(`You have ${accessType}`);
