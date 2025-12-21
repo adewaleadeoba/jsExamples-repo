@@ -79,5 +79,5 @@ else {
             break;
     }   
 }
-
-console.log(`You have ${accessType}`);
+accessTypeMessage = `You have ${accessType}`
+console.log(accessTypeMessage);
